@@ -1,0 +1,88 @@
+
+body {
+    background-color: #919191;
+    display: grid;
+	align-items: center;
+}
+
+.chart-container {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    border: 1px solid black;
+    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: flex-end; /* Align items to the bottom */
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    padding: 10px;
+    transition: padding 0.3s ease-in-out;
+    display: flex;
+
+}
+
+.item {
+    border: 1px solid #000000;
+    padding: 10px;
+    transition: padding 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    }
+
+
+/* Style the dropdown button */
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+/* Style the hamburger icon */
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
